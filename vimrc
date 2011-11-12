@@ -75,7 +75,7 @@
 " }
 
 " Vim UI {
-    colorscheme freya             " Set the 'theme' - some alternatives would be
+    colorscheme mustang             " Set the 'theme' - some alternatives would be
                                     " vividchalk, molokai, desert, molokai-modified, synic, blackboard
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
@@ -94,7 +94,8 @@
         set laststatus=2            "Always show the status line
 
         " Broken down into easily includeable segments
-        set statusline=%<%f\                                " Filename
+        set statusline=[%{getcwd()}]                     " Current dir
+        set statusline+=\ %<%f\                                " Filename
         " set statusline+=\ [%{getcwd()}]                     " Current dir
         set statusline+=%w%h%m%r                            " Options
         set statusline+=%{fugitive#statusline()}            " Git Hotness
