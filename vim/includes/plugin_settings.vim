@@ -14,8 +14,11 @@
 
     " FuzzyFinder {
         let g:fuf_modesDisable = [ 'mrucmd' ]
-        nmap ,f :FufFile<CR>
-        cmap MRU FufMruFile
+        nmap <C-f> :FufFile<cr>
+        nmap <C-b> :FufBuffer<cr>
+        nmap <C-t> :FufTag<cr>
+        nmap <C-m> :FufMruFile<cr>
+        noremap <silent> <C-]> :FufTagWithCursorWord!<CR>
     " }
 
     " Matchit {
@@ -53,7 +56,7 @@
     " PHP syntax { 
         let php_sql_query=1             " Highlight SQL syntax in strings
         let php_noShortTags = 1         " Disable short tags
-        let php_folding = 0             " DON'T enable folding for classes and functions
+        let php_folding = 1             " DON'T enable folding for classes and functions
         let PHP_autoformatcomment = 1
         let php_sync_method = -1
     " }
@@ -67,6 +70,7 @@
         nmap ,t :TlistToggle<CR>
         let Tlist_Close_On_Select = 1
         let Tlist_Show_One_File = 1
+        set tags=~/.vim/mytags/cake
     " }
 
     " T-Comment {

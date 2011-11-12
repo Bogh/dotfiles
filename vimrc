@@ -150,9 +150,6 @@
     au FileType ruby set shiftwidth=2
     au FileType ruby set tabstop=2
     au FileType ruby set softtabstop=2
-    " PHP {
-        let php_folding = 1
-    " }
 " }
 
 " Key (re)Mappings {
@@ -232,6 +229,7 @@
         set guioptions-=m          " Remove the menu & toolbar
         set guioptions-=T
         set lines=55 columns=158    " Set fullscreen for my desktop
+        set guifont=Monaco\ 9
     else
         set term=builtin_ansi       " Make arrow and other keys work
     endif 
