@@ -1,4 +1,4 @@
-" Environment {
+" nvironment {
 
     " Basics {
         set nocompatible        " Forget compatibility with vi - must be first line
@@ -47,7 +47,7 @@
     set history=50              " Store last 50 commands in history (default is 20)
     set timeoutlen=500          " Lower the timeout after typing the leader key
     set hidden                  " Switch between buffers without saving
-    set visualbell              " No beeping
+    " set visualbell              " No beeping
     set dictionary+=$HOME/.vim/includes/dictionary.txt "Custom autocomplete dictionary
 
     " ejs in Node.js is kindof like html
@@ -133,11 +133,11 @@
     set smartindent             " Do smart autoindenting when starting a new line
                                 " works for C-like programs
     set autoindent              " Indent at the same level of the previous line
-    set shiftwidth=2            " Use indents of 4 spaces
+    set shiftwidth=4            " Use indents of 4 spaces
     set expandtab               " Tabs are spaces, not tabs
-    set tabstop=2               " Number of spaces that a <Tab> in the file counts for
+    set tabstop=4               " Number of spaces that a <Tab> in the file counts for
                                 " an indentation every 4 columns
-    set softtabstop=2           " Let backspace delete indent
+    set softtabstop=4           " Let backspace delete indent
     set pastetoggle=<F12>       " Sane indentation on pastes
     " Remove trailing whitespaces and ^M chars
     autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
@@ -150,6 +150,9 @@
     au FileType ruby set shiftwidth=2
     au FileType ruby set tabstop=2
     au FileType ruby set softtabstop=2
+    " PHP {
+        let php_folding = 1
+    " }
 " }
 
 " Key (re)Mappings {

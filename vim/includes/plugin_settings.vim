@@ -24,10 +24,10 @@
 
     " NerdTree {
         nmap ,nt :NERDTreeToggle<CR>
-        let NERDTreeShowHidden=1
+        let NERDTreeShowHidden=0
 
         " Autopen NERDTree and focus cursor in new document
-        autocmd VimEnter * NERDTree /var/www
+        autocmd VimEnter * NERDTree /home/bogdan/www2
         autocmd VimEnter * wincmd p
     " }
 
@@ -65,6 +65,8 @@
 
     " Taglist {
         nmap ,t :TlistToggle<CR>
+        let Tlist_Close_On_Select = 1
+        let Tlist_Show_One_File = 1
     " }
 
     " T-Comment {
