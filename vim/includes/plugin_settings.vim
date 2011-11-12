@@ -68,9 +68,17 @@
 
     " Taglist {
         nmap ,t :TlistToggle<CR>
+        let tlist_php_settings = 'php;c:class;f:function;d:constant'
+        let Tlist_File_Fold_Auto_Close = 1
+        " make tlist pane active when opened
+        let Tlist_GainFocus_On_ToggleOpen = 1
+        " width of window
+        let Tlist_WinWidth = 40
+        " close tlist when a selection is made
         let Tlist_Close_On_Select = 1
-        let Tlist_Show_One_File = 1
-        set tags=~/.vim/mytags/cake
+        let Tlist_Process_File_Always = 0
+        let Tlist_Show_One_file = 1
+        set tags=~/.vim/cake
     " }
 
     " T-Comment {

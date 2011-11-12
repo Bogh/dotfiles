@@ -75,7 +75,7 @@
 " }
 
 " Vim UI {
-    colorscheme mustang             " Set the 'theme' - some alternatives would be
+    colorscheme freya             " Set the 'theme' - some alternatives would be
                                     " vividchalk, molokai, desert, molokai-modified, synic, blackboard
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
