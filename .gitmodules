@@ -31,3 +31,6 @@
 [submodule "vim/bundle/tabularize"]
 	path = vim/bundle/tabularize
 	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/EasyMotion"]
+	path = vim/bundle/EasyMotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
