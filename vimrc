@@ -94,7 +94,6 @@
         set laststatus=2            "Always show the status line
 
         " Broken down into easily includeable segments
-        set statusline=[%{getcwd()}]                     " Current dir
         set statusline+=\ %<%f\                                " Filename
         " set statusline+=\ [%{getcwd()}]                     " Current dir
         set statusline+=%w%h%m%r                            " Options
