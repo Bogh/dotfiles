@@ -26,7 +26,7 @@
     " }
 
     " NerdTree {
-        nmap ,nt :NERDTreeToggle<CR>
+        nmap ,n :NERDTreeToggle<CR>
         let NERDTreeShowHidden=0
 
         " Autopen NERDTree and focus cursor in new document

@@ -121,7 +121,7 @@
     set wildmode=list:longest,full          " Command <Tab> completion, list matches, then longest common part, then all.
     set whichwrap=b,s,h,l,<,>,[,]           " Backspace and cursor keys wrap to
     " set scrolljump=5                      " Lines to scroll when cursor leaves screen
-    set scrolloff=5                         " Minimum 5 lines of text above and below the cursor
+    set scrolloff=10                         " Minimum 5 lines of text above and below the cursor
     set foldenable                          " Auto fold colde
     set gdefault                            " The /g flag on :s substitutions by default
     set list                                " View tabs, where line ends etc
@@ -130,12 +130,13 @@
 " }
 
 " Formatting {
-    set nowrap                  " Don't wrap long lines
+    " set nowrap                  " Don't wrap long lines
+    set wrap
     set smartindent             " Do smart autoindenting when starting a new line
                                 " works for C-like programs
     set autoindent              " Indent at the same level of the previous line
     set shiftwidth=4            " Use indents of 4 spaces
-    set expandtab               " Tabs are spaces, not tabs
+    " set expandtab               " Tabs are spaces, not tabs
     set tabstop=4               " Number of spaces that a <Tab> in the file counts for
                                 " an indentation every 4 columns
     set softtabstop=4           " Let backspace delete indent
@@ -144,16 +145,13 @@
     autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
     " JavaScript & Ruby - set 2 spaces for tabs
-    au FileType javascript set shiftwidth=2
-    au FileType javascript set tabstop=2
-    au FileType javascript set softtabstop=2
-
-    au FileType ruby set shiftwidth=2
-    au FileType ruby set tabstop=2
-    au FileType ruby set softtabstop=2
+    au FileType javascript set shiftwidth=4
+    au FileType javascript set tabstop=4
+    au FileType javascript set softtabstop=4
 " }
 
 " Key (re)Mappings {
+	set list " Makes spaces visible
 
     "The default leader is '\', but many people prefer ',' as it's in a standard
     "location

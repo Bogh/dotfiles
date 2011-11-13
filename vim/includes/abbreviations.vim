@@ -2,9 +2,10 @@
 
 "Load the current buffer into Firefox - Ubuntu specific
 abbrev ff :! firefox %:p &
+abbrev ch :! google-chrome %:p &
 "same command for MAC:
 "abbrev ff :! open -a firefox.app %:p<cr>
-
+"
 " JsLint the file using node.js
 abbrev jslint :! jslint %:p
 
