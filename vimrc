@@ -159,6 +159,7 @@
     " Making it so ; works like : for commands. 
     " Saves typing and eliminates :W style typos due to lazy holding shift.
     nnoremap ; :
+	nmap <C-l> :set list!<cr>
 
     " Fix for navigating long lines
     " Wrapped lines goes down/up to next row, rather than next line in file.
