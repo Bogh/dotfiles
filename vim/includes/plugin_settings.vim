@@ -78,7 +78,7 @@
         let Tlist_Close_On_Select = 1
         let Tlist_Process_File_Always = 0
         let Tlist_Show_One_file = 1
-        set tags=~/.vim/cake
+        set tags=~/dotfiles/vim/cake
     " }
 
     " T-Comment {
