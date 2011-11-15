@@ -30,7 +30,7 @@
         let NERDTreeShowHidden=0
 
         " Autopen NERDTree and focus cursor in new document
-        autocmd VimEnter * NERDTree /home/bogdan/www2
+        autocmd VimEnter * NERDTree /home/bogdan/www
         autocmd VimEnter * wincmd p
     " }
 
