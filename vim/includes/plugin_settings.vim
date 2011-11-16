@@ -43,12 +43,12 @@
         let g:netrw_silent        = 1
         let g:netrw_special_syntax= 1
     " }
-
+" 
     " PDV - php Documentor {
         map ,d :call PhpDocSingle()<CR> 
         vnoremap ,d :call PhpDocRange()<CR>
     " }
-
+" 
     " phpComplete {
         autocmd FileType php set omnifunc=phpcomplete#CompletePHP
     " }
@@ -56,16 +56,11 @@
     " PHP syntax { 
         let php_sql_query=1             " Highlight SQL syntax in strings
         let php_noShortTags = 1         " Disable short tags
-        let php_folding = 1             " DON'T enable folding for classes and functions
+        " let php_folding = 1             " DON'T enable folding for classes and functions
         let PHP_autoformatcomment = 1
         let php_sync_method = -1
     " }
-    " Tabularize {        
-        vmap <Leader>= :Tabularize /=<CR>
-        vmap <Leader>a :Tabularize /:<CR>
-        " vmap ,a :Tabularize /:\zs<CR>
-    " }
-
+	
     " Taglist {
         nmap ,t :TlistToggle<CR>
         let tlist_php_settings = 'php;c:class;f:function;d:constant'

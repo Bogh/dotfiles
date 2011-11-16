@@ -98,7 +98,6 @@
         set statusline+=\ %<%f\                                " Filename
         " set statusline+=\ [%{getcwd()}]                     " Current dir
         set statusline+=%w%h%m%r                            " Options
-        set statusline+=%{fugitive#statusline()}            " Git Hotness
         set statusline+=\ [%{&ff}/%Y]                       " Filetype
         " set statusline+=\ [%{strftime(\"%l:%M:%S\ \%p,\ %a\ %b\ %d,\ %Y\")}]\ 
                                                             " Current time
@@ -123,6 +122,7 @@
     " set scrolljump=5                      " Lines to scroll when cursor leaves screen
     set scrolloff=10                         " Minimum 5 lines of text above and below the cursor
     set foldenable                          " Auto fold colde
+	" set foldmethod=indent
     set gdefault                            " The /g flag on :s substitutions by default
     set list                                " View tabs, where line ends etc
     set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
