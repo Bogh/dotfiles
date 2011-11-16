@@ -67,6 +67,7 @@
     " au BufWinEnter * silent! loadview
 
     " Setting up the directories {
+		set noswapfile
         set nobackup                            " No backups
         set nowritebackup                       " and again
         set directory=$HOME/.vim/tmp//,.        " Swap files location
