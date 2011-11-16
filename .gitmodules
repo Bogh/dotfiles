@@ -1,6 +1,3 @@
-[submodule "vim/bundle/fugitive"]
-	path = vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/NERD_Tree"]
 	path = vim/bundle/NERD_Tree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -25,12 +22,3 @@
 [submodule "vim/bundle/JSLint"]
 	path = vim/bundle/JSLint
 	url = https://github.com/hallettj/jslint.vim.git
-[submodule "vim/bundle/rails"]
-	path = vim/bundle/rails
-	url = https://github.com/tpope/vim-rails.git
-[submodule "vim/bundle/tabularize"]
-	path = vim/bundle/tabularize
-	url = https://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/EasyMotion"]
-	path = vim/bundle/EasyMotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
