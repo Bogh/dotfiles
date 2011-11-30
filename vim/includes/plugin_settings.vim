@@ -84,5 +84,9 @@
         " Change zen coding plugin expansion key to ctrl + e
         let g:user_zen_expandabbr_key = '<C-e>'
     " }
+	"
+	" Action Script {
+		au Bufread,BufNewFile *.as set filetype=actionscript
+	" }
 
 " }
